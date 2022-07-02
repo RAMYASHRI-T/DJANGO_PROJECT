@@ -1,0 +1,237 @@
+<!-- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 
+   CSS3,Bootstrap,Tailwind CSS which are 100% Mobile friendly. w3Hubs all Layouts are responsive 
+   cross browser supported, best quality world class designs. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Payment details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"></head>
+ <style type="text/css">
+	{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background:black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color:#29f700 !important;
+}
+.dropdown-item{
+  color:#29f700 !important;
+}
+.dropdown-toggle{
+	margin-top:10px;
+}
+#navbarSupportedContent a{
+    color:#fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #29f700;
+}
+#navbarSupportedContent button{
+    background: #29f700;
+    width: 6rem;
+    border-radius: 15px;
+	}
+        body {
+            margin: 0;
+            padding: 0;
+            background:#495057;
+            font-family: "Nunito Sans";
+			}
+			h3{
+			color:powderblue;
+			text-align:center;
+			font-size:25px;
+			font-weight:bold;}
+
+        .row {
+            margin: 0;
+        }
+    .form-control::placeholder {
+          color:#fff;}
+
+        .form-control {
+            height: 50px;
+            border: 2px solid green;
+			border-radius:8px;
+            background: none;
+            font-size: 18px;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .form-control:active {
+            outline: none;
+            border: none;
+        }
+
+        .form-control:focus {
+            background: none;
+            box-shadow: none;
+            outline: none;
+            outline: 0;
+        }
+
+        .form-control:hover {
+            border-radius:8px;
+			border:2px solid black;
+            outline: none;
+			color:white;
+            border-color: none;
+        }
+
+        .container {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+
+        button {
+            background-color:orange!important;
+            border:2px solid grey;
+			border-radius:8px;
+            height: 50px;
+            line-height: 50px;
+            margin-top: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark " id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ORGANIC PRODUCTS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Index1.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+      </nav>
+
+<br><br>
+<h3>Payment Details</h3><br><br>
+    <div class="container mb-4">
+        <div class="row pt-2 pb-4">
+            <div class="col-lg-8">
+                <form action="Index1.html">
+                    <div class="row pt-4">
+                        <div class="col-lg-6 pl-0">
+                              <div class="form-group">
+
+                                <input type="text" class="form-control" placeholder="Enter name" 
+								 pattern="[a-zA-Z][a-zA-Z ]{2,}"required>
+                            </div>
+                            <div class="form-group">
+
+                                <input type="email" class="form-control" placeholder="abc123@gmail.com" required>
+                            </div>
+
+                            <div class="form-group">
+
+                                <textarea class="form-control" rows="5" placeholder="Residential Address" id="Address"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" placeholder="Enter city" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 pl-0">
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control" placeholder="Enter State" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pr-0 mob-pl-0">
+                                    <div class="form-group">
+
+                                        <input type="number" class="form-control" placeholder="Enter Pincode" maxlength="6"required>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                        <div class="col-lg-6 mob-pl-0">
+                            <div class="form-group">
+							<input type="text" class="form-control" placeholder="Enter Product Name" required>
+                            </div>
+                            <div class="form-group">
+
+                                <input type="number" class="form-control" placeholder="Enter Product Id" required>
+                            </div>
+							 <div class="form-group">
+
+                                <input type="number" class="form-control" placeholder="Enter Quanity" required>
+                            </div>
+                            <div class="form-group">
+
+                                <input type="number" class="form-control" placeholder="Enter Price" required>
+                            </div>
+                             <div class="col-md-12 p-0 text-center">
+                                    <p class="mb-1 pb-2">Accepted Cards</p>
+                                    <img src="payment.png" class="w-100">
+                                </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-4 pt-1"><br>
+			<div class="form-group">
+
+                                <input type="text" class="form-control" placeholder="Enter Name of card" required>
+                            </div>
+							<div class="form-group">
+
+                                <input type="tell" class="form-control" placeholder="Enter Card number" required>
+                            </div>
+							<div class="row">
+                                <div class="col-lg-6 pl-0">
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control" placeholder="Expiry" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pr-0 mob-pl-0">
+                                    <div class="form-group">
+
+                                        <input type="number" class="form-control" placeholder="Enter Cvv" required>
+                                    </div>
+                                </div>
+                            </div>
+							  <button type="submit" class="btn btn-primary w-100">Pay</button>
+                   </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
