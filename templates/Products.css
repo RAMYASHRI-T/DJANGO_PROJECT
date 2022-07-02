@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background:black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color:#29f700 !important;
+}
+.dropdown-item{
+  color:#29f700 !important;
+}
+.dropdown-toggle{
+	margin-top:10px;
+}
+#navbarSupportedContent a{
+    color:#fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #29f700;
+}
+#navbarSupportedContent button{
+    background: #29f700;
+    width: 6rem;
+    border-radius: 15px;
+}
+#cereals{
+background:#e5e5e5;
+}
+#cereals h1{
+font-size:50px;
+letter-spacing:2px;
+font-weight: 700;
+text-align: center;
+}
+#cereals h2{
+color:green;
+letter-spacing: 1px;
+font-size: 20px;
+}
+#cereals img{
+width:200px;
+height:150px;
+margin-left: 45px;
+margin-top: 10px;
+}
+.card{
+width:300px;
+height: 350px;
+background: #e5e5e5 !important;
+border:none !important;
+box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+             inset 4px 4px 10px white;
+border-radius:20px !important ;
+overflow: hidden;
+justify-content: center;
+align-self: center;
+margin: 20px 60px;
+}
+.card:hover{
+box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+            inset -4px -4px 10px white;
+transition: .2s;
+}
+.card .card-title{
+color:green;
+}
+#oils{
+background:#e5e5e5;
+}
+#oils h2{
+color:green;
+letter-spacing: 1px;
+font-size: 20px;
+}
+#oils img{
+width:200px;
+height:150px;
+margin-left: 45px;
+margin-top: 10px;
+}
+.card{
+width:300px;
+height: 350px;
+background: #e5e5e5 !important;
+border:none !important;
+box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+             inset 4px 4px 10px white;
+border-radius:20px !important ;
+overflow: hidden;
+justify-content: center;
+align-self: center;
+margin: 20px 60px;
+}
+.card:hover{
+box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+            inset -4px -4px 10px white;
+transition: .2s;
+}
+.card .card-title{
+color:green;
+}
+#nuts{
+background:#e5e5e5;
+}
+#nuts h2{
+color:green;
+letter-spacing: 1px;
+font-size: 20px;
+}
+#nuts img{
+width:200px;
+height:150px;
+margin-left: 45px;
+margin-top: 10px;
+}
+.card{
+width:300px;
+height: 350px;
+background: #e5e5e5 !important;
+border:none !important;
+box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+             inset 4px 4px 10px white;
+border-radius:20px !important ;
+overflow: hidden;
+justify-content: center;
+align-self: center;
+margin: 20px 60px;
+}
+.card:hover{
+box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+            inset -4px -4px 10px white;
+transition: .2s;
+}
+.card .card-title{
+color:green;
+}
+#Pulses{
+background:#e5e5e5;
+}
+#Pulses h2{
+color:green;
+letter-spacing: 1px;
+font-size: 20px;
+}
+#Pulses img{
+width:200px;
+height:150px;
+margin-left: 45px;
+margin-top: 10px;
+}
+.card{
+width:300px;
+height: 350px;
+background: #e5e5e5 !important;
+border:none !important;
+box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+             inset 4px 4px 10px white;
+border-radius:20px !important ;
+overflow: hidden;
+justify-content: center;
+align-self: center;
+margin: 20px 60px;
+}
+.card:hover{
+box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+            inset -4px -4px 10px white;
+transition: .2s;
+}
+.card .card-title{
+color:green;
+}
+#Botanical{
+background:#e5e5e5;
+}
+#Botanical h2{
+color:green;
+letter-spacing: 1px;
+font-size: 20px;
+}
+#Botanical img{
+width:200px;
+height:150px;
+margin-left: 45px;
+margin-top: 10px;
+}
+.card{
+width:300px;
+height: 350px;
+background: #e5e5e5 !important;
+border:none !important;
+box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+             inset 4px 4px 10px white;
+border-radius:20px !important ;
+overflow: hidden;
+justify-content: center;
+align-self: center;
+margin: 20px 60px;
+}
+.card:hover{
+box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+            inset -4px -4px 10px white;
+transition: .2s;
+}
+.card .card-title{
+color:green;
+}
+footer{
+    width: 119%;
+	margin-left:-25px;
+    height: 50px;
+    background: rgba(0,0,0,.8);
+    margin-top: -30px;
+    text-align: center;
+    color:white;
+    padding: 3px;
+	
+}

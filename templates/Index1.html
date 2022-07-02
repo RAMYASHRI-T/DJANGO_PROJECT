@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background:black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color:#29f700 !important;
+}
+.dropdown-item{
+color:#29f700 !important;
+}
+#navbarSupportedContent a{
+    color:#fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #29f700;
+}
+#navbarSupportedContent button{
+    background: #29f700;
+    width: 6rem;
+    border-radius: 15px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,0.4)),url("../static/images/bg.jfif");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h1{
+    font-size: 100px;
+    color:white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #ccc,
+                 0px 2px 0px #ccc,
+                 0px 3px 0px #ccc,
+                 0px 4px 0px #ccc,
+                 0px 5px 0px #ccc,
+                 0px 5px 0px #ccc,
+                 0px 6px 0px #ccc,
+                 0px 7px 0px #ccc,
+                 0px 8px 0px #ccc,
+                 0px 9px 0px #ccc;
+    
+}
+#home p{
+    font-size:18px ;
+    color: #fff;
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background:green !important;
+    color:white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+.more{
+	background:orange!important;
+    color:white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+	margin-left:600px;
+}
+#about{
+    background: linear-gradient(to right,#ea1d6f,#eb466b 100%);
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color:green;
+}
+#about p{
+    color:white;
+}
+#product{
+    background:#e5e5e5;
+}
+#product h1{
+    font-size:50px;
+    letter-spacing:2px;
+    font-weight: 700;
+	color:green;
+}
+#product img{
+    width:250px;
+    height:200px;
+}
+.card{
+    width:250px;
+    height: 300px;
+    background: #e5e5e5 !important;
+    border:none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                 inset 4px 4px 10px white;
+    border-radius:20px !important ;
+    overflow: hidden;
+    justify-content: center;
+    align-self: center;
+    margin: 20px 60px;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition: .2s;
+}
+#contact{
+    height: 100%;
+}
+.box{
+    width: 80% !important;
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,.8);
+    margin-top: -30px;
+    text-align: center;
+    color:white;
+    padding: 3px;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark " id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ORGANIC PRODUCTS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <a href="signup1"> <button class="btn p-2 my-lg-0 my-2">LOGIN</button></a><hr>
+           <a href="login1"> <button class="btn p-2 my-lg-0 my-2">SIGN IN</button></a>
+        </div>
+      </nav>
+
+      <section id="home">
+          <h1 class="text-center" >ORGANIC PRODUCTS</h1>
+          <p>Variety's the very spice of life,That gived it all its flavor</p>
+        <div class="input-group m-4">
+            <input type="text" class="form-control" placeholder="email" required>
+            <button class="btn signin">Get started</button>
+        </div>
+        </section>
+        <section id="about">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 my-2">
+                        <img src="../static/images/about.png" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-6col-12 p-lg-5 p-2 my-5">
+                          <h1>ABOUT US</h1>
+                          <p > Spices were among the most demanded and expensive products available in Europe in the Middle Ages, the most common being black pepper, cinnamon (and the cheaper alternative cassia), cumin, n
+                              utmeg, ginger and cloves. Given medieval medicine's main theory of humorism, spices and herbs were indispensable to balance "humors" in food,[6] a daily basis for good health at a time of recurrent pandemics. In addition to being desired by those using medieval medicine, the European elite also craved spices in the Middle Ages. An example of the European aristocracy's demand for spice comes from the King of Aragon, who invested substantial resources into bringing back spices to Spain in the 12th century.
+                               He was specifically looking for spices to put in wine, and was not alone among European monarchs at the time to have such a desire for spice
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="product">
+            <div class="container m-5">
+            <h1 class="text-center my-5"> OUR PRODUCTS</h1>  
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="../static/images/img1.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Turmeric</h5>
+                          <a href="card1" class="btn signin">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="../static/images/img2.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Red Chilly</h5>
+                          <a href="card1" class="btn signin">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="../static/images/img3.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Garam Masala</h5>
+                          <a href="card1" class="btn signin">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="../static/images/img4.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Geru Powder</h5>
+                          <a href="card1" class="btn signin">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="../static/images/img5.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Immunity Mixture</h5>
+                          <a href="card1" class="btn signin">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="../static/images/img6.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Soonth Powder</h5>
+                          <a href="card1" class="btn signin">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="../static/images/img7.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Milk Masala</h5>
+                          <a href="card1" class="btn signin">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="../static/images/img8.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Tea Powder</h5>
+                          <a href="Card1" class="btn signin">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="../static/images/img9.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Black Pepper</h5>
+                          <a href="card1" class="btn signin">Buy Now</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            </div>
+			</section><br>
+			<a href="product1" class="btn more" role="button">More Products</a>
+			<br><br>
+			<div class="container">
+	<h1> Price List</h1>
+  <table class="table table-bordered">
+    <thead class="bg-primary">
+      <tr>
+        <th>Product Name</th>
+        <th>Quality</th>
+        <th>Price(rs)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-danger">
+        <td>Turmeric</td>
+        <td>100g</td>
+        <td>20</td>
+      </tr>      
+      <tr class="bg-success">
+        <td>Coffee Powder</td>
+		<td>50g</td>
+		<td>75</td>
+      </tr>
+      <tr class="bg-danger">
+        <td>Dhall</td>
+        <td>1kg</td>
+        <td>140</td>
+      </tr>
+      <tr class="bg-info">
+        <td>Castor oil</td>
+        <td>500ml</td>
+        <td>250</td>
+      </tr>
+      <tr class="bg-warning">
+        <td>Cashew Nut</td>
+        <td>500g</td>
+        <td>200</td>
+      </tr>
+      <tr class="bg-success">
+        <td>Soya Beans</td>
+        <td>1kg</td>
+        <td>300</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+      <form action="HTTP://LOCALHOST:2000/LOGINGET" METHOD="GET">
+        <section id="contact">
+            <div class="container box">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6  col-12">
+                        <img src="../static/images/contact.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-6  col-12">
+                        <h1>CONTACT US</h1>
+                        <form>
+                            <input type="text" name="name1" class="form-control"placeholder="enter your name">
+                            <input type="email" class="form-control"placeholder="enter your email">
+                            <textarea class="form-control" placeholder="enter ur message"></textarea>
+                            <button class="btn signin">send</button>
+                        </form>
+                        
+                    </div>
+                </div>            
+        </section>
+        <footer>
+            © Copyright 2020.Organic Products T&C and privacy policy<br>
+
+              Designed and Developed by D2S
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About.com</title>
+		<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+<style>
+.row{
+margin-left:370px;
+background-color:white;
+height:720px;
+width:50%;
+border:2px solid black;
+border-radius:6px;
+margin-top:100px;
+}
+.control-label{
+margin:6px;
+margin-left:60px;
+font-size: 16px;
+ font-weight: bold;
+ color:black;
+}
+.form-control{
+border:2px solid green;
+}
+.btn{
+margin-left:300px;
+background-color:green;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  width:180px;
+  border: none;
+  cursor: pointer;
+}
+</style>
+<body>
+</style>
+<body></body>
+<div class="container-fluid">
+<div class="row">
+ <div class="col-sm-4">
+ <button type="button" class="btn btn-danger" style="width:657px;margin-left:-16px;padding:8px;font-size:18px;background-color:red">Signup</button>
+</div>
+<br>
+ <br><br>
+ <form action ="" method="post">
+    {% csrf_token %}
+  <div class="form-group">
+      <label class="control-label col-sm-4">name</label>
+      <div class="col-sm-5">
+	  <input type="text" class="form-control" id="name" name="name">
+	  </div>
+	  </div><br><br><br>
+      <div class="form-group">
+        <label class="control-label col-sm-4">newname</label>
+        <div class="col-sm-5">
+        <input type="text" class="form-control" id="name" name="newname">
+        </div>
+        </div><br><br><br>
+ <div class="form-group">
+      <label class="control-label col-sm-4">email</label>
+      <div class="col-sm-5">
+	  <input type="email" class="form-control" id="mail" name="email">
+	  </div>
+	  </div><br><br><br>
+      <div class="form-group">
+        <label class="control-label col-sm-4">newemail</label>
+        <div class="col-sm-5">
+        <input type="email" class="form-control" id="mail" name="newemail">
+        </div>
+        </div><br><br><br>
+	  <div class="form-group">
+      <label class="control-label col-sm-4" for="pwd">password</label>
+      <div class="col-sm-5">          
+       <input type="password" class="form-control" id="pwd" name="password">
+      </div><br><br><br><br>
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="pwd">newpassword</label>
+        <div class="col-sm-5">          
+         <input type="password" class="form-control" id="pwd" name="newpassword">
+        </div><br><br><br><br>
+	  <div class="form-group">
+      <label class="control-label col-sm-4" for="pwd">mobile</label>
+      <div class="col-sm-5">          
+       <input type="tel" class="form-control" id="num" name="mobile">
+      </div><br><br><br><br>
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="pwd">newmobile</label>
+        <div class="col-sm-5">          
+         <input type="tel" class="form-control" id="num" name="newmobile">
+        </div><br><br><br><br>
+	  <input type="submit" class="btn btn-info" value="Signup">
+	  
+    </div>
+  </form>
+</div>
+ </div>
+</div><br><br><br>
+</div>
+</body>
+</html>

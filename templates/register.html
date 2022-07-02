@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>scholarship.com</title>
+    </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.main{
+}
+	.main ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:grey ;
+}
+ .main li {
+  float: left;
+  border-right:1px solid #bbb;
+  font-size:16px;
+  font-weight:bold;
+}
+.main li:last-child {
+  border-right: none;
+}
+.main li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.main li a:hover:not(.active) {
+  background-color: red;
+}
+.active {
+  background-color: indianred;
+  }
+  .header{
+    width:100% ;
+    height: 120px;
+    background-color:white;
+    background-image: url("https://scholarships.gov.in/img/logo.jpg"),url("https://scholarships.gov.in/img/digital-india.png"),url("https://scholarships.gov.in/img/google.png");
+    background-repeat: no-repeat;
+    background-size:35% 50%,15% 25%,10% 20%;
+    background-position: 150px 30px,900px 30px,1150px 30px;
+	padding:8px;
+	}
+	.nav{
+	width:100%;
+	height:30px;
+	background-color:black;
+    padding-top: 10px;
+    text-align: center;
+	margin:-0px;
+	}
+	.nav a{
+            text-decoration: none;
+            color: white;
+            margin-right: 80px;
+            font-weight: bold;
+			font-size:16px;
+            font-family: cosmic sans-serif;
+            text-align: center;
+			}
+			.dropbutton {
+        background-color:black;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: cosmic sans-serif;
+        border: none;
+        text-decoration: none;
+    }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: lightgreen;
+        min-width: 100px;
+        z-index: 1;
+      }
+     .dropdown-content a {
+        color: black;
+        padding: 8px 8px;
+        text-decoration: none;
+        display: block;
+      }
+       .dropdown-content a:hover {background-color:red;}
+      .dropdown:hover .dropdown-content {display: block;}
+       .dropdown:hover .dropbutton {background-color: black;
+	   } 
+	   .img{
+            width: 100%;
+            height:545px;
+			}
+fieldset{
+	margin:20px;
+background-color:lightgrey;
+border-radius: 20px;
+ margin-left: 70px;
+ max-width:1200px;
+ border:2px solid black;
+ height:100%
+}
+.form-header {
+    background-color:#808080;
+	margin-left:570px;
+	margin-right:520px;
+	height:50px;
+	text-align:center; 
+    border-radius:10px;	
+}
+.form-header h1 {
+    font-size: 30px;
+    text-align: center;
+    color:yellow;
+    padding: 8px ;
+	}
+.form-body {
+    padding: 10px 50px;
+    color: #666;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-body .label {
+    color:#EA660C;
+    font-size: 19px;
+    font-weight: bold;
+	margin:5px;
+}
+.form-body .form-input {
+     margin:5px;
+    font-size: 18px;
+    box-sizing: border-box;
+	font-family:cosmic sans-serif;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:red;
+    text-align: left;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background: white;
+    outline: none;
+}
+.horizontal-group .left {
+    float:left;
+	margin-left:100px;
+    width: 25%;
+}
+.horizontal-group .right {
+    float: right;
+	margin-right:100px;
+    width: 25%;
+}
+input[type="radio"]{
+    font-size:18px;
+	text-shadow: 0 0 0 3px orange;
+	color:red;
+	}
+input[type="file"] {
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+</style>		
+<body>
+<div class="main">
+<ul>
+  <li style="margin-left:150px"><a class="active" href="#">SCHOLARSHIP</a></li>
+ <li style="float:right;margin-right:60px"><a href="#">For Academic Year 2021-22</a></li>
+</ul>
+</div>  
+<div class="header">
+</div>
+<div class="nav">
+
+            <a href="#">Home</a>
+            <a href="About.html">About us</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox">contact</a>
+			 <div class="dropdown">
+                <button class="dropbutton">Login</button>
+                <div class="dropdown-content">
+                 <a href="Register.html">Register</a>
+                  <a href="Login.html">Renewal</a>
+				  <a href="signup.html">Sign Up</a>
+				  </div>
+   </div>
+   </div>
+   <form action="Index.html">
+  <div class="form-header">
+   <h1>Register</div>
+  <fieldset>
+ <div class="form-body">
+    <div class="horizontal-group">
+        <div class="form-group left">
+            <label for="firstname" class="label">Student name </label>
+            <input type="text" id="firstname" class="form-input" pattern="[a-zA-z0-9.$_]{5,15}" />
+        </div>
+        <div class="form-group right">
+            <label for="number" class="label">Roll no</label>
+            <input type="number" id="lname" class="form-input" required />
+        </div>
+    </div>
+<div class="horizontal-group">
+        <div class="form-group left">
+            <label for="fnmame" class="label">Fathers name </label>
+            <input type="text" id="firstname" class="form-input" required="required" />
+        </div>
+        <div class="form-group right">
+            <label for="name" class="label">Mothers name</label>
+            <input type="text" id="name" class="form-input" required />
+        </div>
+    </div>
+<div class="horizontal-group">
+    <div class="form-group left">
+        <label class="label">Gender</label>
+        <div class="input-group">
+            <label for="male"> <input type="radio" name="gender" value="male" id="male"/> Male</label>
+            <label for="female"> <input type="radio" name="gender" value="female" id="female" /> Female</label>
+        </div>
+		</div>
+		 <div class="form-group right">
+         <label class="label">Religion</label>
+		 <div class="input-group">
+            <label for="hindu"> <input type="radio" name="religion" value="hindu" id="hindu" /> Hindu</label>
+             <label for="christian"> <input type="radio" name="religion" value="christian" id="christian"/> Christian</label>
+			 <label for="muslim"> <input type="radio" name="religion" value="muslim" id="muslim" /> Muslim</label>
+    </div>
+</div>
+</div>
+<div class="horizontal-group">
+    <div class="form-group left">
+        <label for="email" class="label">Email </label>
+        <input type="email" id="password" class="form-input" required />
+    </div>
+    <div class="form-group right">
+        <label for="password" class="label">Password *</label>
+        <input type="password" class="form-input" id="password" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" maxlength="8"required/>
+    </div>
+</div>
+<div class="horizontal-group">
+   <div class="form-group left">
+        <label class="label">Community</label>
+         <input type="text" id="name"class="form-input">
+   </div>
+   <div class="form-group right">
+   <label class="label">Caste</label>
+   <div class="input-group">
+            <label for="BC"> <input type="radio" name="caste" value="bc"/> BC</label>
+             <label for="MBC"> <input type="radio" name="caste" value="mbc"/> MBC</label>
+			 <label for="sc"> <input type="radio" name="caste" value="sc"/> SC</label>
+    </div>
+</div>
+</div>
+<div class="horizontal-group">
+    <div class="form-group right"><br>
+        <label class="label">Course</label>
+        <select class="form-input" id="level">
+            <option value="B">BE</option>
+            <option value="I">ME</option>
+            <option value="A">MBA</option>
+        </select>
+    </div>
+   <div class="form-group left">
+        <label class="label">Year</label>
+        <select class="form-input" id="level">
+            <option value="B" >I</option>
+            <option value="I">II</option>
+            <option value="A">III</option>
+			<option value="D">IV</option>
+        </select>
+    </div>
+ </div>
+<div class="horizontal-group">
+    <div class="form-group right"><br>
+        <label class="label">First graduate</label>
+        <div class="input-group">
+            <label for="yes"> <input type="radio" name="graduate" value="male" id="yes" /> Yes</label>
+            <label for="no"> <input type="radio" name="graduate" value="female" id="no" />No</label>
+        </div>
+		</div>
+		<div class="form-group left">
+            <label for="number" class="label">Aadhar no</label>
+            <input type="number" id="lname" class="form-input" required />
+        </div>
+</div>
+<div class="horizontal-group">
+        <div class="form-group right"><br><br>
+            <label class="label">Age </label>
+            <input type="number" id="num" class="form-input" required="required" />
+        </div>
+        <div class="form-group left"><br>
+            <label for="number" class="label">Mobile no</label>
+            <input type="number" id="lname" class="form-input" required />
+        </div>
+    </div>
+	<div class="horizontal-group">
+        <div class="form-group left"><br>
+            <label for="firstname" class="label">District</label>
+            <input type="text" id="firstname" class="form-input" required="required" />
+        </div>
+		<div class="form-group right"><br>
+            <label for="firstname" class="label">Taluk</label>
+            <input type="text" id="firstname" class="form-input" required="required" />
+        </div>
+</div>
+<div class="horizontal-group">
+        <div class="form-group left">
+       <label for="Address" class="label">Address</label>
+       <textarea class="form-input" rows="6"cols="30" class="form-input" style="height:70px"required" /></textarea>
+	   </div>
+	   <div class="form-group right">
+	   <label class="label">State</label>
+	   <input type="text" id="name" class="form-input">
+	   </div>
+</div>
+<div class="horizontal-group">
+        <div class="form-group right"><br><br>
+            <label  class="label">Date of birth</label>
+            <input type="date" id="date" class="form-input" required="required" />
+        </div>
+        <div class="form-group left">
+            <label for="number" class="label">Academic-year</label>
+            <input type="number" id="lname" class="form-input"  placeholder="2021-2022" readonly/>
+        </div>
+    </div>
+	<div class="horizontal-group">
+       <div class="form-group left">
+           <label  class="label">Bank name</label>
+	       <input class="form-input" list="datalistoptions">
+		   <datalist id="datalistoptions">
+		   <option value="Karur vysa bank">
+		   <option value="Canara bank">
+		   <option value="SBI">
+		   <option value="Indian overseas bank">
+		   </datalist>
+		 </div>
+	    <div class="form-group right">
+		<label class="label">Account NO</label>
+		<input type="number" id="num" class="form-input">
+		</div>
+</div>
+<div class="horizontal-group">
+       <div class="form-group left">
+	      <label class="label">Documents</label>
+		  <input type="file" class="form-input" id="file">
+		  </div>
+	<div class="form-group right">
+	      <label class="label">Pincode</label>
+		  <input type="number" id="num" class="form-input">
+	</div>
+</div>
+</div>
+</fieldset>
+<input type="submit" value="Register"readonly style="width:80px;text-align:center;background-color:green;font-size:16px;border-radius:5px;margin-left:700px"></a>
+</form>
+</body>
+</html>
+	
+   
+   
+   
